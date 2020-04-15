@@ -1,0 +1,325 @@
+@import './fonts.css';
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Futura PT Medium';
+    overflow-x: hidden;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}
+.container {
+    width: 968px;
+    margin: 0 auto;
+}
+.main-wrapper {
+    position: relative;
+    width: 100%;
+    background-color: #007bff;
+    margin-bottom: 80px;
+}
+.header {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    width: 66px;
+    height: 50px;
+    background-image: url(../img/header/logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.header-info {
+    position: relative;   
+} 
+.header-info::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: -50px;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/error/header-time.png);
+    background-repeat: no-repeat;
+    background-size: contain; 
+}
+.header-info__date,
+.header-info__time {
+    color: #ffffff;
+    margin: 0;
+    font-family: 'Futura PT Book';
+}
+.header-info__date {
+    font-family: 'Futura PT';
+}
+.main {
+    position: relative;
+}
+.main-title {
+    font-size: 28px;
+    color: #ffffff;
+    margin: 0;
+    font-family: 'Futura PT';
+    padding: 120px 0 14px 0;
+}
+.main-error-masseger {
+    font-size: 86px;
+    color: #ffffff;
+    margin: 0;
+    padding: 14px 0;
+    font-family: 'Futura PT';
+    line-height: 1;
+}
+.main-description {
+    color: #ffffff;
+    font-size: 24px;
+    font-family: 'Futura PT';
+    margin: 0;
+    padding: 14px 0 120px 0;
+}
+.main-img {
+    position: absolute;
+    right: -140px;
+    top: 0;
+    width: 550px;
+    height: 400px;
+    background-image: url(../img/error/error-img.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.content {
+    position: absolute;
+    right: 0;
+    bottom: 30px;
+    width: 400px;
+}
+.content h2 {
+    color: #ffffff;
+    font-family: 'Futura PT Book';
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0;
+    text-align: right;
+    margin-bottom: 10px;
+}
+.content-list {
+    display: flex;
+    justify-content: space-between;
+}
+.content-list__item {
+    width: 190px;
+}
+.content-list__item-link {
+    text-align: right;
+    line-height: 1.6;
+    font-family: 'Futura PT Book';
+    font-weight: 400;
+    font-size: 16px;
+    color: #ffffff;
+    margin: 0;
+}
+.content-list__item-link span {
+    font-family: 'Futura PT';
+}
+.content-list__item-number {
+    text-align: right;
+    line-height: 1.6;
+    color: #ffffff;
+    font-size: 18px;
+    font-family: 'Futura PT';
+    margin: 0;
+}
+.footer-link {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+    width: 70%;
+    margin: 0 auto;
+    color: #3d3e51;
+    font-family: 'Futura PT Demi';
+    list-style-type: none;
+}
+.ok-desing-left {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 120px;
+    height: 350px;
+    background-image: url(../img/ok/ok-desing.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.3;
+}
+.ok-desing-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translateY(0);
+    width: 120px;
+    height: 350px;
+    background-image: url(../img/ok/ok-desing.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.3;
+}
+.footer-link__item {
+    display: block;
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+    color: #000;
+    margin-bottom: 40px;
+    padding: 0 25px;
+}
+.footer-text {
+    width: 70%;
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.6;
+    margin: 0 auto;
+    margin-bottom: 114px;
+    font-weight: normal;
+    font-style: normal;
+}
+.footer-text span {
+    font-family: 'Futura PT';
+    font-style: normal;
+    background-color: #fefc3b;
+    padding: 4px 8px;
+}
+@media (min-width: 1440px) {
+    .ok-desing-left {
+        left: 40px;
+    }
+    .ok-desing-left,
+    .ok-desing-right {
+        width: 160px;
+        height: 450px;
+    }
+    .ok-desing-right {
+        right: 40px;
+    }
+}
+@media (min-width: 1790px) {
+    .ok-desing-left {
+        left: 40px;
+    }
+    .ok-desing-left,
+    .ok-desing-right {
+        width: 240px;
+        height: 450px;
+    }
+    .ok-desing-right {
+        right: 40px;
+    }
+}
+@media (max-width: 1270px) {
+    .container {
+        width: 880px;
+    }
+    .main-img {
+        top: 100px;
+        right: 0;
+        width: 400px;
+        height: 250px;
+    }
+}
+@media (max-width: 910px) {
+    .container {
+        width: 768px;
+    }
+    .main-title {
+        font-size: 24px;
+    }
+    .main-error-masseger {
+        font-size: 72px;
+    }
+    .main-description {
+        font-size: 20px;
+    }
+}
+@media (max-width: 792px) {
+    .container {
+        width: 80%;
+    }
+    .main-title {
+        padding: 80px 0 20px 0;
+        font-size: 18px;
+    }
+    .main-error-masseger {
+        font-size: 56px;
+    }
+    .main-description {
+        font-size: 16px;
+    }
+    .main-img {
+        top: 60px;
+        right: -40px;
+        width: 360px;
+        height: 220px;
+    }
+    .content h2 {
+        font-size: 18px;
+    }
+}
+@media (max-width: 640px) {
+    .main-img {
+        position: static;
+        width: 90%;
+        height: 200px;
+        padding-top: 30px;
+        margin: 0 auto;
+    }
+    .container {
+        width: 80%;
+    }
+    .main-title {
+        padding: 20px 0 10px 0;
+        font-size: 18px;
+        text-align: center;
+    }
+    .main-error-masseger {
+        font-size: 56px;
+        text-align: center;
+        padding: 10px 0 10px 0;
+    }
+    .main-description {
+        text-align: center;
+        font-size: 16px;
+        padding: 10px 0 40px 0;
+    }
+    .content {
+        width: 100%;
+        position: static;
+    }
+    .content h2 {
+        text-align: center;
+    }
+    .content-list {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 40px;
+
+    }
+    .header-info__date,
+    .header-info__time {
+        font-size: 14px;
+    }
+    .content-list__item-number,
+    .content-list__item-link {
+        text-align: center;
+    }
+}
+
+
